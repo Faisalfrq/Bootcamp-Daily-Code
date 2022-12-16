@@ -172,6 +172,6 @@ const getRectArea = function(width, height) {
   // let b = null;
   //a == b -> true 
   //a === b -> false
-  console.log("-----------COPY WRITING example--------")
+  console.log("-----------CopyWithin example--------")
   let a1=["a","b","c","d","e","f","g"]
   console.log(a1.copyWithin(2,0,1))
