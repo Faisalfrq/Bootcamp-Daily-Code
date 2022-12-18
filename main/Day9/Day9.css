@@ -1,0 +1,40 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+    color: rgb(86, 85, 85);
+    box-sizing: border-box;
+}
+body{
+    background-color: skyblue;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-content{
+    width: 40vw;
+    height: 60vh;
+    background-color: white;
+    padding: 0px 20px;
+}
+h3{
+    text-align: center;
+    margin: 10px 0px;
+}
+input{
+    width: 100%;
+    padding: 7px 10px ;
+    outline: null;
+    margin-bottom: 10px;
+}
+.btn{
+    width: 100px;
+    padding: 5px 6px; 
+    margin-top:15px;
+    background-color: blueviolet;
+    color: white;
+    outline: null;
+    border: null;
+}
