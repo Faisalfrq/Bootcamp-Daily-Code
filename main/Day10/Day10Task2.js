@@ -48,3 +48,5 @@ objEngineer.display();
 
 var objSales = new salesPerson()
 objSales.display();
+
+console.log('hello')
