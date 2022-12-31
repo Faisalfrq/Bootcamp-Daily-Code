@@ -2,7 +2,9 @@
 function MapExample1(){
     const numbers = [65, 44, 12, 4];
     const newArr = numbers.map(x=> myFunction(x))
+    
     console.log(newArr)
+
     function myFunction(num) {
       return num * 2;
     }
