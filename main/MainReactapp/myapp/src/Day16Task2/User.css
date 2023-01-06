@@ -1,0 +1,22 @@
+
+img {
+    display: inline;
+    height: 150px;
+    width: 150px;
+    border-radius: 80px;
+    margin: 10px;
+}
+.UserCard{
+    background-color: azure;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border: 3px black solid;
+    height: 200px;
+    width: 400px;
+    margin: 30px;
+}
+.UserCard:hover{
+    background-color: gray;
+    box-shadow: 10px 5px 5px black;
+}
