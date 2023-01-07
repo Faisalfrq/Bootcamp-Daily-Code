@@ -6,6 +6,7 @@ const Post = (props) => {
 
   const [showMore, setShowMore] = useState(false);
 
+  
 
   return (
     <div className='PostContainer'>
