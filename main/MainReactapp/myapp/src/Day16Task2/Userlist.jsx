@@ -9,9 +9,9 @@ const Userlist = () => {
   function activeUser() {
     let count = 0
     Data.map(user => {
-      if (user.isActive == "online") {
-        count += 1
-      }
+      if (user.isActive === "online") {
+        return count += 1
+      } else return count;
     })
     return count;
   }
@@ -26,7 +26,7 @@ const Userlist = () => {
 
   return (
     <div className='row'>
-      {/* <h1>People Online {activeUser()}</h1> */}
+       <h1>People Online {activeUser()}</h1> 
       <h1>{person.length === 0 ? 'No active Users' : `total ${person.length} are active`}</h1>
       {person.map(user => {
         return (<div> 
