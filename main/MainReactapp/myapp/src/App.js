@@ -7,6 +7,7 @@ import Postlist from './Day16PostTask/Postlist';
 import FormPage from './Day17Form/FormPage';
 import ShowHide from './Day17Board/ShowHide';
 import FireReg from './Day17FireBase/FireReg';
+import Carlist from './Day18SortTask/Carlist';
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
       {/* <Postlist/> */}
       {/* <ShowHide/> */}
       {/* <FormPage/> */}
-      <FireReg/>
+      {/* <FireReg/> */}
+      <Carlist/>
     </div>
   );
 }

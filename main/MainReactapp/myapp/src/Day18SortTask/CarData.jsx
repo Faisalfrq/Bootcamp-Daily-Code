@@ -1,0 +1,84 @@
+let CarData=[
+    {
+        id:1,
+        img:"https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        name:"BMW",
+        color:"blue",
+        year:"2020",
+        price:10000
+    },
+    {
+        id:2,
+        img:"https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        name:"Alfa Romeo C4",
+        color:"red",
+        year:"2020",
+        price:10000
+    },
+    {
+        id:3,
+        img:"https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        name:"Range Rover",
+        color:"white",
+        year:"2022",
+        price:10000
+    },
+    {
+        id:4,
+        img:"https://images.pexels.com/photos/909907/pexels-photo-909907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        name:"Audi A-series",
+        color:"black",
+        year:"2022",
+        price:10000
+    },
+    {
+        id:5,
+        img:"https://images.pexels.com/photos/244206/pexels-photo-244206.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        name:"Audi",
+        color:"blue",
+        year:"2021",
+        price:10000
+    },
+    {
+        id:6,
+        img:"https://images.pexels.com/photos/12964227/pexels-photo-12964227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        name:"Ferrari",
+        color:"red",
+        year:"2021",
+        price:10000
+    },
+    {
+        id:7,
+        img:"https://images.pexels.com/photos/6891808/pexels-photo-6891808.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        name:"Ferrari",
+        model:"",
+        color:"yellow",
+        year:"2019",
+        price:10000
+    },
+    {
+        id:8,
+        img:"https://images.pexels.com/photos/10573470/pexels-photo-10573470.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        name:"Mercedes-Benz GT",
+        color:"white",
+        year:"2019",
+        price:10000
+    },
+    {
+        id:9,
+        img:"https://images.pexels.com/photos/313779/pexels-photo-313779.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        name:"Bmw",
+        color:"black",
+        year:"2019",
+        price:10000
+    },
+    {
+        id:10,
+        img:"https://images.pexels.com/photos/12964185/pexels-photo-12964185.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        name:"Aston Martin",
+        color:"black",
+        year:"2018",
+        price:10000
+    }
+]
+export default CarData
