@@ -5,7 +5,7 @@ const Car = (props) => {
   return (
     <div>
         <div className="card">
-            <img class="card-img-top" src={img}></img>
+            <img class="card-img-top" src={img} alt-text='carImg'></img>
             <h5 class="card-title">{name}</h5>
             <div class="card-text">
                 <span>color:{color}</span>

@@ -7,8 +7,9 @@ const Carlist = () => {
     <div>
         {
         CarData.map((car)=>{
-            
+          return(
             <Car img={car.img} name={car.name} color={car.color} year={car.year} price={car.price} />
+          )
         })
     }
     </div>
