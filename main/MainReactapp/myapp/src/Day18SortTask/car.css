@@ -1,0 +1,20 @@
+nav{
+    background-color: grey !important;
+    padding: 0 !important;
+    height: 10vh;
+    font-weight: bold;
+}
+.card{
+    height: 50vh;
+    width: 40vh;
+    background-color: rgb(128, 145, 162) !important;
+}
+.card img{
+    height: 30vh;
+}
+
+.yearColor1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

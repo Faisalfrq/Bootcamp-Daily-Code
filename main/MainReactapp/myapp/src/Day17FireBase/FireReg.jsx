@@ -7,13 +7,13 @@ const FireReg = () => {
     let [user, setUser] = useState([])
 
     
-    const handleChange=(e)=>{
-        e.preventDefault();
-        //setUser({...user,[name]:password})
-        let userData = { name:name,password:password }
-        console.log(userData)
-        setUser([...user,userData])    
-    }
+    // const handleChange=(e)=>{
+    //     e.preventDefault();
+    //     setUser({...user,[name]:password})
+    //     let userData = { name:name,password:password }
+    //     console.log(userData)
+    //     setUser([...user,userData])    
+    // }
 
     const handleClick=async(e)=>{
         e.preventDefault();

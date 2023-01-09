@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './Post.css';
 
-const Post = (props) => {
-  const { id, img, name, post, onDelete } = props;
+const Post = (prp) => {
+  const { id, img, name, post, onDelete } = prp;
 
   const [showMore, setShowMore] = useState(false);
 
@@ -11,7 +11,7 @@ const Post = (props) => {
   return (
     <div className='PostContainer'>
       <div className='nameId'>
-        <img src={img}></img>
+        <img src={img} alt='user'></img>
         <span>{name}</span>
         <button className='btn btn-danger m-2' onClick={() => onDelete(id)}>
           Delete
