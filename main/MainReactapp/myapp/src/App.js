@@ -1,4 +1,5 @@
 
+import MainDisplay from './Day19FakeStore/MainDisplay';
 import './App.css';
 
 // import Page from './Day16Task/Page';
@@ -10,6 +11,11 @@ import './App.css';
 // import FireReg from './Day17FireBase/FireReg';
 
 import Carlist from './Day18SortTask/Carlist';
+// import Effect from './Day19ConditionalRendering/Effect';
+// import Example from './Day19ConditionalRendering/Example';
+// import UserPostsMainPage from './Day19Task/UserPostsMainPage';
+// import PortfolioMain from './Portfolio/PortfolioMain';
+
 
 
 function App() {
@@ -24,6 +30,11 @@ function App() {
       {/* <FormPage/> */}
       {/* <FireReg/> */}
       <Carlist/>
+      {/* <PortfolioMain/> */}
+      {/* <UserPostsMainPage/> */}
+      {/* <Example/> */}
+      {/* <Effect/> */}
+      {/* <MainDisplay/> */}
     </div>
   );
 }

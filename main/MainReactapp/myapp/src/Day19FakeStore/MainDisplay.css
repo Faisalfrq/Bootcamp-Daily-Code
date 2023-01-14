@@ -1,0 +1,21 @@
+.container{
+    display: flex;
+}
+.card{
+    
+    height: 50vh;
+    width: 20vw;
+    background-color: rgb(128, 145, 162) !important;
+    margin-bottom: 5vh;
+}
+.card-body{
+    height: 50vh;
+}
+.card img{
+    height: 30vh;
+}
+.yearColor1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
