@@ -18,23 +18,36 @@ import './App.css';
 // import PortfolioMain from './Portfolio/PortfolioMain';
 // import MainDisplay from './Day19FakeStore/MainDisplay';
 // import Order from './Day20OrderTask/Order';
-import Comp1 from './Day20ComponentDrilling/Comp1';
+// import Comp1 from './Day20ComponentDrilling/Comp1';
 
 // import Main from './Day20Context/Main';
 import { Route, Routes } from 'react-router-dom';
-import About from './Day20ReactRouterDom/About';
-import Home from './Day20ReactRouterDom/Home';
-import Products from './Day20ReactRouterDom/Products';
-import Nav from './Day20ReactRouterDom/Nav';
-import ProductMen from './Day20ReactRouterDom/ProductMen';
-import ProductWoman from './Day20ReactRouterDom/ProductWoman';
+//-------------RouterDOM-----------------
+// import About from './Day20ReactRouterDom/About';
+// import Home from './Day20ReactRouterDom/Home';
+// import Products from './Day20ReactRouterDom/Products';
+// import Nav from './Day20ReactRouterDom/Nav';
+// import ProductMen from './Day20ReactRouterDom/ProductMen';
+// import ProductWoman from './Day20ReactRouterDom/ProductWoman';
+//--------------------------------------------------------
+import Day20Nav from './Day20HomeTaskRouterDom/Day20Nav';
+import Table from './Day20HomeTaskRouterDom/Table';
+import Add from './Day20HomeTaskRouterDom/Add';
 
 function App() {
-  console.log("in App")
   return (
     <div className="App">
+      
+      <Day20Nav/>
+      <Routes>
+        <Route path='/' element={<Table/>}></Route>
+        <Route path='/add' element={<Add/>}></Route>
+      </Routes>
+
+
+
       {/* <Home/> */}
-      <Nav/>
+      {/* <Nav/>
       <Routes>
         <Route path='/' element={<Home/>}></Route>
         <Route path='/about' element={<About/>}></Route>
@@ -42,7 +55,7 @@ function App() {
           <Route path='productmen' element={<ProductMen/>}/>
           <Route path='productwoman' element={<ProductWoman/>}/>
         </Route>
-      </Routes>
+      </Routes> */}
 
       
       {/* <Page/> */}
