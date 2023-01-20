@@ -1,0 +1,16 @@
+.card{
+    height: 60vh;
+    width: 23vw;
+    background: grey !important;
+    border: 1px solid black;
+    justify-items: center;
+    align-items: center;
+}
+.card img{
+    height: 40vh;
+    width: 20vw;
+}
+.cart-items img{
+    height: 60px;
+    width: 80px;
+}
