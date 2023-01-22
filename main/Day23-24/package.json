@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "json-server": "^0.17.1",
-    "reactstrap": "^9.1.5"
-  }
-}
