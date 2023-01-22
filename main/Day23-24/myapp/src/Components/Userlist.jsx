@@ -2,6 +2,7 @@ import React from "react";
 import { Model } from "./Model";
 import { useQuery } from "react-query";
 import { Spinner, Table } from "reactstrap";
+import { CreateUser } from "./CreateUser";
 
 const Userlist = () => {
   async function getUsers() {
@@ -18,6 +19,7 @@ const Userlist = () => {
     <>
       <h1>React Query</h1>
       <h3>User List</h3>
+      <CreateUser/>
       <Table bordered>
         <thead>
           <tr>

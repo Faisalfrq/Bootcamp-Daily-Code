@@ -1,22 +1,28 @@
 {
-    "users": [
-      {
-        "id": 1,
-        "name": "Qasim",
-        "email": "iamqasimk@gmail.com",
-        "age": "23"
-      },
-      {
-        "id": 2,
-        "name": "Usama",
-        "email": "Usama@gmail.com",
-        "age": "24"
-      },
-      {
-        "id": 3,
-        "name": "Malik",
-        "email": "malik@gmail.com",
-        "age": "23"
-      }
-    ]
-  }
+  "users": [
+    {
+      "name": "Qasim",
+      "age": "23",
+      "email": "iamqasimk@gmail.com",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "name": "Usama",
+      "email": "Usama@gmail.com",
+      "age": "24"
+    },
+    {
+      "id": 3,
+      "name": "Malik",
+      "email": "malik@gmail.com",
+      "age": "23"
+    },
+    {
+      "name": "faisal",
+      "email": "faisal@xyz.comF",
+      "age": "26",
+      "id": 4
+    }
+  ]
+}

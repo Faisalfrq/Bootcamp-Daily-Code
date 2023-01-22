@@ -10,20 +10,48 @@ import {
     Label,
   } from "reactstrap";
   import { useState } from "react";
-  import { useQueryClient } from "react-query";
-   //import './model.css'
+  import { useMutation, useQueryClient } from "react-query";
+  // import './Model.css'
   
   export const Model = (props) => {
     const [modal, setModal] = useState(false);
-    const queryClient = useQueryClient()
-    const query=queryClient.getQueryData('users')
-    const currentUser=query.find(q=> q.id === props.id)
-    console.log(currentUser)
+    const queryClient = useQueryClient();
+    const mutation = useMutation(
+      async (editUser) => {
+        const rawResponse = await fetch(
+          `http://localhost:3001/users/${props.id}`,
+          {
+            method: "PUT",
+            headers: {
+              Accept: "application/json",
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(editUser),
+          }
+        );
+      },
+      {
+        onSuccess: () => {
+          return queryClient.invalidateQueries(["users"]);
+        },
+      }
+    );
+    const query = queryClient.getQueryData("users");
+    const currentUser = query.find((q) => q.id === props.id);
+  
     const toggle = () => setModal(!modal);
+  
     const handleSubmit = (e) => {
-      e.preventdefautl()
-      console.log("HAHAHHAHAHAHAH")
-    }
+      e.preventDefault();
+      const { age, email, name } = e.target.elements;
+      const payload = {
+        name: name.value,
+        age: age.value,
+        email: email.value,
+      };
+      mutation.mutate(payload);
+      toggle();
+    };
     return (
       <>
         <Button color="dark" onClick={toggle}>
@@ -60,16 +88,21 @@ import {
                   defaultValue={currentUser.age}
                 />
               </FormGroup>
+              <FormGroup>
+                <ModalFooter>
+                  <Button type="submit" color="primary">
+                    Update
+                  </Button>
+                  <Button type="" color="primary">
+                    Update
+                  </Button>
+                  <Button color="secondary" onClick={toggle}>
+                    Discard
+                  </Button>
+                </ModalFooter>
+              </FormGroup>
             </Form>
           </ModalBody>
-          <ModalFooter>
-            <Button type="submit" color="primary" onClick={toggle}>
-              Update
-            </Button>
-            <Button color="secondary" onClick={toggle}>
-              Discard
-            </Button>
-          </ModalFooter>
         </Modal>
       </>
     );
