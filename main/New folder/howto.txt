@@ -30,4 +30,6 @@ npm i react-redux
 3- pass store to your app => wrap app in index.js in provider
 4- Create a Redux State Slice =>  make folder => make counterSlice => exports actions
 =========================
+LogRocket blog for Redux-Query
 ================================
+
