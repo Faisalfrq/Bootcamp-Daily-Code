@@ -6,7 +6,7 @@ import { CreateUser } from "./CreateUser";
 
 const Userlist = () => {
   async function getUsers() {
-    const response = await fetch("http://localhost:3001/users");
+    const response = await fetch("http://localhost:3004/users");
     return response.json();
   }
 

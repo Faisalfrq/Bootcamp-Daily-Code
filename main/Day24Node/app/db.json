@@ -1,0 +1,16 @@
+{
+    "users": [
+      {
+        "name": "Malik",
+        "age": "1223",
+        "email": "Malik@this.com",
+        "id": 4
+      },
+      {
+        "name": "Qasim",
+        "email": "iamqasimk@gmail.com",
+        "age": "23",
+        "id": 5
+      }
+    ]
+  }

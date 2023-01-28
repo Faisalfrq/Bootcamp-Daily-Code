@@ -1,0 +1,6 @@
+1- git init
+2- npm i express
+3- server file
+4- now make MongoDB cluster---
+5- npm i dotenv - to make config file
+6- npm i nodemon - for not restarting the server evertime

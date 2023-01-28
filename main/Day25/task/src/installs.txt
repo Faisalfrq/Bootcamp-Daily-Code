@@ -1,0 +1,16 @@
+npm i react-bootstap bootstrap
+
+
+npm i reactstrap
+
+1)
+npm i json-server
+make json file
+add server in package.json
+npm run server 
+watching
+
+2)
+npm i react-query
+
+
