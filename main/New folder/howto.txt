@@ -1,0 +1,33 @@
+Redux
+Redux-toolkit => only to store.
+React-Query => used for only for accessing.
+Redux-toolkit-Query => used to accessing and storage.
+=============================================
+callback - when in asynchrounus flow - after completion of action - returns xyz - 
+-parallel thread
+=============================================
+workings
+1) click event listener - call to action
+2) action - dispatchin data to store - action{type:add, payload:""} 
+3) all reducer will get the action - matches with the right type/reducer - 
+4) store can only be updated by reducer 
+5) Redux thunk awaits data if fetching from api - store is syncronus
+6) reducer updates the store and all childs of store 
+=============================================
+The Redux Toolkit package is intended to be the standard way to write Redux logic. It was originally created to help address three common concerns about Redux:
+
+"Configuring a Redux store is too complicated"
+"I have to add a lot of packages to get Redux to do anything useful"
+"Redux requires too much boilerplate code"
+================================================
+
+npm install @reduxjs/toolkit
+npm i react-redux 
+
+==================================================
+1- install
+2- create redux store => make store.js in app folder at src. use configureStore method from toolkit
+3- pass store to your app => wrap app in index.js in provider
+4- Create a Redux State Slice =>  make folder => make counterSlice => exports actions
+=========================
+================================

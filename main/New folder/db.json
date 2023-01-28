@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "name": "Ammar baig",
+      "age": "37",
+      "email": "ammar@gmail.com",
+      "id": 1
+    },
+    {
+      "name": "Ghous",
+      "age": "55",
+      "email": "ghous@gmail.com",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "name": "Osama",
+      "email": "osama@gmail.com",
+      "age": "55"
+    }
+  ]
+}
