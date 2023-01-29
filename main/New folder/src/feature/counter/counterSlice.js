@@ -1,5 +1,24 @@
 import { createSlice } from '@reduxjs/toolkit'
-
+//========================reactQuery================
+import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react' //Redux-Query
+//import type { Pokemon } from './types'
+// Define a service using a base URL and expected endpoints
+export const userApi = createApi({
+  reducerPath: 'userApi',
+  baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:3000/api/v2/' }),
+  endpoints: (builder) => ({ //for queries an mutations
+    getUser: builder.query({
+      query: () => 'getAll',
+    }),
+    getUserbyId: builder.query({
+      query:(id)=> `getOne/${id}`
+    })
+  }),
+})
+// Export hooks for usage in functional components, which are
+// auto-generated based on the defined endpoints
+export const { useGetUserQuery, useGetUserbyIdQuery } = userApi
+//====================================================
 const initialState = {
   value: 0,
 }

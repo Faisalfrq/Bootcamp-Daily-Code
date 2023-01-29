@@ -1,7 +1,7 @@
 Redux
 Redux-toolkit => only to store.
 React-Query => used for only for accessing.
-Redux-toolkit-Query => used to accessing and storage.
+Redux-toolkit-Query => used to accessing and storage. Caching- not calling data from database over and over
 =============================================
 callback - when in asynchrounus flow - after completion of action - returns xyz - 
 -parallel thread
@@ -29,7 +29,19 @@ npm i react-redux
 2- create redux store => make store.js in app folder at src. use configureStore method from toolkit
 3- pass store to your app => wrap app in index.js in provider
 4- Create a Redux State Slice =>  make folder => make counterSlice => exports actions
-=========================
+===========================================================
 LogRocket blog for Redux-Query
-================================
+=======================================================
+->store
+->provider
+->counterslice(object: Name of reducer, initial state, all reducers,extra reducer-used for Asyncronous/api)
+->reducers
+->actionExport
+->actionImplement(useDispatch,useSelector) 
+==================================================================================================================
+REDUX Query:
+
+1) createApi => fetchbaseQuery(passURL) => user Builder=> use query to fetch + use mutation to modify
+2) store = userApi=> reducerPath-reducer
+3) use customhook made in createApi 
 

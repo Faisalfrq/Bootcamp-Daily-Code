@@ -8,6 +8,8 @@ export function Counter() {
   const count = useSelector((state) => state.counter.value) // accessing and assigning value/element we want to update
   const dispatch = useDispatch() // calls the function which responds to the reducer we want 
 
+  
+
   return (
     <div>
       <div>
