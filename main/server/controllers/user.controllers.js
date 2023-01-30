@@ -22,7 +22,7 @@ exports.addUser=(req,res)=>{
     //destructing require param from req body
     const {name,email,age}= req.body
     //console.log("=============")
-    user = new User({
+    const user = new User({
         name,
         email,
         age
