@@ -1,0 +1,11 @@
+make server and client
+
+initalizing server:
+npm init
+npm i express dotenv mongoose nodemon
+add nodemon in package.json
+
+create server.js
+-app.listen()
+-app.get()
+-get db string from mongodb -add password - add db name
