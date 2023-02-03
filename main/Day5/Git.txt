@@ -1,12 +1,15 @@
 -download git
 -make a folder 
 -open cmd from the folders loc at top bad
--git status 
+
 -git init
--git add files
--link git by 
+-git add .
+-link git by
+-git status 
+-git commit
 git config user.name "Faisal Farooq"
 git config user.email "faisalfarooq.edu@gmail.com"
 -git commit
+-git push
 
 https://github.com/Faisalfrq/Rep-Test.git
