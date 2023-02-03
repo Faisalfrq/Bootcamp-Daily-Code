@@ -4,25 +4,22 @@ let app= express()
 const dotenv= require('dotenv')
 dotenv.config({path:'./config/config.env'})
 
+const cors=require('cors')
+app.use(cors())
+
 const mongoose= require('mongoose') // used to connect server to mongoDB- it returns the promise
 
-
+let connectDb=require('./DB/connect')
 
 let port= process.env.PORT; // db port
-let db= process.env.DB; //db string
 
-
-let connectDb=async()=>{    //connecting db
-    try{
-        await mongoose.connect(db)
-        console.log('db connected')
-    }catch(error){
-        console.log('error: '+error)
-    }
-    
-}
 mongoose.set('strictQuery', true); // to remove depreciation
 connectDb() // calling function
+
+app.use(express.json())
+
+let userRouter=require('./userRoutes/userRoutes')
+app.use('/api',userRouter)
 
 app.get('/',(req,res)=>{ 
     res.send('hello')

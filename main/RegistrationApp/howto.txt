@@ -9,3 +9,21 @@ create server.js
 -app.listen()
 -app.get()
 -get db string from mongodb -add password - add db name
+-write async function for connecting server to db
+
+make config file add PORT AND DB
+
+seprate connect function to file connect.js
+
+back in server.js
+do dotenv to secure PORT and DB string
+
+make routes -userRoutes file
+
+seprate controllers from routes.
+
+make a Data-model
+
+=In postman app -edit headers key=contenttype/value=application.json collection body raw post data
+
+post data through postman
