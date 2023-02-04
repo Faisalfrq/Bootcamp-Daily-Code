@@ -4,6 +4,9 @@ let app= express()
 const dotenv= require('dotenv')
 dotenv.config({path:'./config/config.env'})
 
+const loginRoutes = require('./userRoutes/login.routes')
+app.use(loginRoutes)
+
 const cors=require('cors')
 app.use(cors())
 

@@ -1,10 +1,13 @@
 import axios from 'axios';
 import React, { useState } from 'react'
+import 'react-bootstrap'
+import { Button } from 'react-bootstrap';
 import Table from 'react-bootstrap/Table';
 // import axios from 'axios'
 
 const GetFromDataBase = () => {
     let [data, setData] = useState([])
+    
     const getData = async (e) => {
         e.preventDefault();
         try {
@@ -16,6 +19,11 @@ const GetFromDataBase = () => {
             alert(err)
         }
     }
+    
+    const deleteRecord= async (x)=> {
+        console.log(x.target.value)
+    }
+
 
     return (
         <div>
@@ -36,6 +44,7 @@ const GetFromDataBase = () => {
                                 <td>{x.name}</td>
                                 <td>{x.email}</td>
                                 <td>{x.phone}</td>
+                                <Button className='btn btn-danger' value={x.id} onClick={deleteRecord}>Delete</Button>
                             </tr>
                         )
                     })}
